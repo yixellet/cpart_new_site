@@ -1,6 +1,7 @@
 /* Components */
 import { Providers } from '@/lib/providers'
 import { Nav } from './components/Nav'
+import { Footer } from './components/Footer/Footer'
 
 /* Instruments */
 import styles from './styles/layout.module.css'
@@ -59,6 +60,7 @@ export default function RootLayout(props: React.PropsWithChildren) {
               </a>
             </footer>
           </section>
+          <Footer />
         </body>
       </html>
     </Providers>
