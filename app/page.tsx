@@ -1,10 +1,15 @@
 /* Components */
-import { Counter } from './components/Counter/Counter'
 
 export default function IndexPage() {
-  return <Counter />
+  return (
+  <>
+    <h1>ГЛАВНАЯ</h1>
+    <p>
+      Визитка организации
+    </p>
+  </>)
 }
 
 export const metadata = {
-  title: 'Redux Toolkit',
+  title: 'ГАУ АО "ЦПАРТ"',
 }

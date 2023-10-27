@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './footer.module.css'
 
 export const Footer = () => {
@@ -6,13 +7,13 @@ export const Footer = () => {
       <div className={styles.content}>
         <nav>
           <ul>
-            <li>Главная</li>
-            <li>Кто мы</li>
-            <li>Что мы делаем</li>
-            <li>Как нас найти</li>
-            <li>Новости</li>
-            <li>Статьи</li>
-            <li>Документы</li>
+            <li><Link href='/'>Главная</Link></li>
+            <li><Link href='/about'>Кто мы</Link></li>
+            <li><Link href='/work'>Что мы делаем</Link></li>
+            <li><Link href='/contacts'>Как нас найти</Link></li>
+            <li><Link href='/news'>Новости</Link></li>
+            <li><Link href='/blog'>Статьи</Link></li>
+            <li><Link href='/docs'>Документы</Link></li>
           </ul>
         </nav>
         <div className={styles.links}>
@@ -22,7 +23,7 @@ export const Footer = () => {
       </div>
       <div className={styles.contacts}>
         <p>414000, г. Астрахань, ул. Набережная 1 мая, 75 / ул. Шаумяна, 48</p>
-        <p>gisaogp@mail.ru</p>
+        <a href="mailto:gisaogp@mail.ru">gisaogp@mail.ru</a>
         <p>8 (8512) 66-74-00</p>
         <p>8 (8512) 66-74-60</p>
         <div className={styles.social}>
