@@ -8,3 +8,7 @@ export default function DocsPage() {
     </>
   )
 }
+
+export const metadata = {
+  title: 'ГАУ АО "ЦПАРТ" | Документы',
+}

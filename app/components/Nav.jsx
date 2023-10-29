@@ -6,17 +6,15 @@ import { usePathname } from 'next/navigation'
 
 /* Instruments */
 import styles from '../styles/layout.module.css'
+import logo from '../../public/QmYdAvMh5ZQ.png';
 
 export const Nav = () => {
   const pathname = usePathname()
 
   return (
     <nav className={styles.nav}>
-      <Link
-        className={`${styles.link} ${pathname === '/' ? styles.active : ''}`}
-        href="/"
-      >
-        Главная
+      <Link href="/">
+        <img src={logo.src} alt="Logo" style={{width: 55, height: 50}} />
       </Link>
       <Link
         className={`${styles.link} ${
@@ -36,11 +34,27 @@ export const Nav = () => {
       </Link>
       <Link
         className={`${styles.link} ${
-          pathname === '/contacts' ? styles.active : ''
+          pathname === '/docs' ? styles.active : ''
         }`}
-        href="/contacts"
+        href="/docs"
       >
-        Контакты
+        Документы
+      </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === '/news' ? styles.active : ''
+        }`}
+        href="/news"
+      >
+        Новости
+      </Link>
+      <Link
+        className={`${styles.link} ${
+          pathname === '/blog' ? styles.active : ''
+        }`}
+        href="/blog"
+      >
+        Статьи
       </Link>
     </nav>
   )

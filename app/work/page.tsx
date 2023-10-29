@@ -8,3 +8,7 @@ export default function WorkPage() {
     </>
   )
 }
+
+export const metadata = {
+  title: 'ГАУ АО "ЦПАРТ" | Деятельность',
+}

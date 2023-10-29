@@ -8,3 +8,7 @@ export default function BlogPage() {
     </>
   )
 }
+
+export const metadata = {
+  title: 'ГАУ АО "ЦПАРТ" | Блог',
+}

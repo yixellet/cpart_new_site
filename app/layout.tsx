@@ -12,12 +12,10 @@ export default function RootLayout(props: React.PropsWithChildren) {
     <Providers>
       <html lang="en">
         <body>
-          <section className={styles.container}>
-            <header className={styles.header}>
-              <Nav />
-            </header>
-            <main className={styles.main}>{props.children}</main>
-          </section>
+          <header className={styles.header}>
+            <Nav />
+          </header>
+          <main className={styles.main}>{props.children}</main>
           <Footer />
         </body>
       </html>

@@ -8,3 +8,7 @@ export default function AboutPage() {
     </>
   )
 }
+
+export const metadata = {
+  title: 'ГАУ АО "ЦПАРТ" | О нас',
+}

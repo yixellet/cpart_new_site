@@ -8,3 +8,7 @@ export default function NewsPage() {
     </>
   )
 }
+
+export const metadata = {
+  title: 'ГАУ АО "ЦПАРТ" | Новости',
+}
