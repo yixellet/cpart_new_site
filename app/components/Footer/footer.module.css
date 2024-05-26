@@ -2,3 +2,41 @@
   background-color: rgb(43, 43, 43);
   color: white;
 }
+
+.container {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.content {
+  width: calc(33% - 10px);
+}
+
+.content_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  height: 100%;
+}
+
+.links {
+  width: calc(33% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts {
+  width: calc(33% - 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.text {
+  margin: 0;
+}

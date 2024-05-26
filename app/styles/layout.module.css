@@ -41,9 +41,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 60px;
   padding: 8px;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(6px + 2vmin);
 }
 
 .link:hover {
@@ -51,7 +51,7 @@
 }
 
 .link {
-  color: #704cb6;
+  color: #808080;
 }
 
 .link.active {
@@ -74,4 +74,139 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.title_full_width {
+  /*background-color: #dddddd;*/
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 30px;
+}
+
+.title_with_image {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title_image_block {
+  background-color: #797979;
+  height: 300px;
+  width: 550px;
+}
+
+.header_main_word {
+  font-size: 130px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 0 40px;
+  line-height: 1;
+}
+
+.text_without_image_block {
+  margin: 50px;
+  background-color: #fff1e8;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_without_image_block_white {
+  margin: 0 0 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 40rem;
+}
+
+.text_pink {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 40rem;
+  margin-top: 30px;
+}
+
+.text:first-of-type {
+  margin-top: 0;
+}
+
+.text_right {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 40rem;
+  /*text-align: right;*/
+}
+
+.text_i_right {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 40rem;
+  /*text-align: right;*/
+  font-style: italic;
+  color: #5c5c5c;
+}
+
+.text_right:first-of-type {
+  margin-top: 0;
+}
+
+.text_with_image_block {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.text_with_image_block_reverse {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 100px 0 50px;
+}
+
+.image_block {
+  background-color: #797979;
+  height: 300px;
+  width: 550px;
+}
+
+.docs_list {
+  margin: 80px 0;
+  width: 65%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #797979;
+}
+
+.doc_item {
+  margin: 20px;
+}
+
+.a {
+  color: #2285e0;
+}
+
+.img_form {
+  width: 550px;
+  height: 496px;
+  box-shadow: 0 0 20px #949494;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transition: box-shadow 0.5s;
+}
+
+.img_form:hover {
+  box-shadow: 0 0 30px #949494;
+  transform: scale(1.02);
 }
