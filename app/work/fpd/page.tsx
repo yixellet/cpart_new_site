@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 import RequestForm from './RequestForm/RequestForm';
 
-import styles from '../styles/layout.module.css'
-import form from '../../public/request_form.png'
+import styles from '../../styles/layout.module.css'
+import form from '../../../public/request_form.png'
 
 export default function WorkPage() {
   const [formIsOpen, setFormIsOpen] = useState(false);
