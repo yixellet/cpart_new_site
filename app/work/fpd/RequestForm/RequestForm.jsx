@@ -13,7 +13,7 @@ export default function RequestForm(props) {
     setType(e.target.value);
   }
 
-  console.log(type)
+  console.log(tips)
   
   return (
     <div className={styles.wrapper}>
@@ -73,6 +73,7 @@ export default function RequestForm(props) {
                     <select value={type} onChange={handleChangeType}>
                       <option value="" disabled>Выберите тип данных</option>
                       {
+                        tips &&
                         Object.values(tips.types).map(type => 
                           <option key={type.code} value={type.code}>{type.name}</option>
                         )
