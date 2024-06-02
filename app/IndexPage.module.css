@@ -48,6 +48,12 @@
   margin: 0.2em 0 0 0;
 }
 
+.work_carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1024px) {
   .cpart_full_name {
     font-size: 90px;
@@ -64,7 +70,7 @@
 
 @media screen and (max-width: 500px) {
   .cpart_full_name {
-    font-size: 60px;
+    font-size: 80px;
     margin: 15px;
   }
 
@@ -77,6 +83,10 @@
   .name {
     flex-direction: column;
     text-align: center;
+  }
+
+  .center {
+    margin: 0;
   }
 
   .part {

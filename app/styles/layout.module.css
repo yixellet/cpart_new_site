@@ -53,6 +53,7 @@
 .footer {
   grid-area: footer;
   justify-self: center;
+  margin-top: 40px;
 }
 
 .title_full_width {

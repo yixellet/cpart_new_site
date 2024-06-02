@@ -1,4 +1,6 @@
 /* Components */
+import Carousel from './components/Carousel/Carousel'
+
 import styles from './IndexPage.module.css'
 import { noto_serif, noto_sans } from './fonts'
 
@@ -18,9 +20,9 @@ export default function IndexPage() {
       </div>
     </div>
   </div>
-    <p>
-      Визитка организации
-    </p>
+  <section className={styles.work_carousel}>
+    <Carousel />
+  </section>
   </>)
 }
 
