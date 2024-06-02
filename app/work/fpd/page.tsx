@@ -1,22 +1,9 @@
-"use client"
-
-import { useState } from 'react';
-
 import RequestForm from './RequestForm/RequestForm';
 
 import styles from '../../styles/layout.module.css'
 import form from '../../../public/request_form.png'
 
 export default function WorkPage() {
-  const [formIsOpen, setFormIsOpen] = useState(false);
-
-  function openForm() {
-    setFormIsOpen(true)
-  }
-
-  function closeForm() {
-    setFormIsOpen(false)
-  }
 
   return (
     <>
@@ -90,7 +77,7 @@ export default function WorkPage() {
         </p>
       </div>
       <div className={styles.image_block}>
-        <img onClick={(e) => openForm()} src={form.src} className={styles.img_form} />
+        <img src={form.src} className={styles.img_form} />
       </div>
     </div>
     <div className={styles.text_without_image_block_white}>
@@ -159,15 +146,10 @@ export default function WorkPage() {
       государственными учреждениями для включения в фонды пространственных 
       данных субъектов Российской Федерации или федеральный фонд пространственных данных"</li>
     </ul>
-    {
-      formIsOpen &&
-      <RequestForm closeFunction={() => closeForm()} />
-    }
     </>
   )
 }
-/*
+
 export const metadata = {
   title: 'ГАУ АО "ЦПАРТ" | Деятельность',
 }
-*/
