@@ -1,10 +1,14 @@
 /* Components */
 
+import styles from './IndexPage.module.css'
+import { noto_serif, noto_sans } from './fonts'
+
 export default function IndexPage() {
   return (
   <>
-  <div>
-    <h2>ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ АСТРАХАНСКЙ ОБЛАСТИ</h2>
+  <div className={styles.cpart_full_name}>
+    <h2 className={`${noto_sans.className} ${styles.gauao}`}>
+      ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ АСТРАХАНСКЙ ОБЛАСТИ</h2>
     <div>
       <h1>ЦЕНТР</h1>
       <div>

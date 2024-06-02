@@ -14,11 +14,6 @@ export const Nav2 = () => {
   return (
     <nav className={styles.nav}>
       <ol className={styles.main_menu}>
-        <li className={styles.main_menu_item}>
-          <ol className={styles.sub_menu}>
-            <li></li>
-          </ol>
-        </li>
       </ol>
     </nav>
   )
