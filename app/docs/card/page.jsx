@@ -43,7 +43,7 @@ export default function DocsPage() {
       <div className={styles.can_download}>
         <p className={`${noto_sans.className} ${styles.can_download_text}`}>
           Вы можете скачать карту партнёра в 
-          форматах <a className={styles.link}>PDF</a> и <a>ODT</a>.
+          форматах <a className={styles.link}>PDF</a> и <a className={styles.link}>ODT</a>.
         </p>
       </div>
     </>

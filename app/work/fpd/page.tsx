@@ -1,4 +1,4 @@
-import RequestForm from './RequestForm/RequestForm';
+import Link from 'next/link'
 
 import styles from '../../styles/layout.module.css'
 import form from '../../../public/request_form.png'
@@ -9,11 +9,11 @@ export default function WorkPage() {
     <>
     <div className={styles.title_full_width}>
       <div className={styles.title_with_image}>
-        <div className={styles.title_text_block}>
+        <hgroup className={styles.title_text_block}>
           <h1 className={styles.header_main_word}>ФОНД</h1>
           <h2 className={styles.header_other_word}>ПРОСТРАНСТВЕННЫХ ДАННЫХ</h2>
           <h2 className={styles.header_other_word}>АСТРАХАНСКОЙ ОБЛАСТИ</h2>
-        </div>
+        </hgroup>
         <div className={styles.title_image_block}>
 
         </div>
@@ -62,10 +62,6 @@ export default function WorkPage() {
           на интересующую территорию или схему на любой картографической основе
           (например, <a className={styles.a} target='_blank' href="https://2gis.ru/">2ГИС</a> или <a className={styles.a} target='_blank' href="https://yandex.ru/maps/">Яндекс.Карты</a>).
         </p>
-        <p className={styles.text_i_right}>
-          По щелчку на изображении слева 
-          откроется подробная инструкция по заполнению заявления.
-        </p>
         <p className={styles.text_right}>
           Обязательно подпишите заявление личной либо электронной цифровой подписью. 
           Юридические лица (а также индивидуальные предприниматели и кадастровые инженеры) 
@@ -73,12 +69,15 @@ export default function WorkPage() {
         </p>
         <p className={styles.text_right}>
           Вы можете подать заявление лично, направить его по почте либо на наш 
-          электронный адрес <a className={styles.a} href="mailto:fpd.ao@yandex.ru">fpd.ao@yandex.ru</a>. 
+          электронный адрес <Link className={styles.a} href="mailto:fpd.ao@yandex.ru">fpd.ao@yandex.ru</Link>. 
         </p>
       </div>
-      <div className={styles.image_block}>
-        <img src={form.src} className={styles.img_form} />
-      </div>
+      <figure className={styles.image_block}>
+        <Link href='/work/fpd/howto#get_from'>
+          <img src={form.src} className={styles.img_form} />
+        </Link>
+        <figcaption className={styles.figcaption}>Щелкните на изображении для получения подробной инструкции</figcaption>
+      </figure>
     </div>
     <div className={styles.text_without_image_block_white}>
       <p className={styles.text}>
@@ -115,9 +114,12 @@ export default function WorkPage() {
           передача закрепляется актом.
         </p>
       </div>
-      <div className={styles.image_block}>
-
-      </div>
+      <figure className={styles.image_block}>
+        <Link href='/work/fpd/howto#put_to'>
+          <img src={form.src} className={styles.img_form} />
+        </Link>
+        <figcaption className={styles.figcaption}>Щелкните на изображении для получения подробной инструкции</figcaption>
+      </figure>
     </div>
 
     <ul className={styles.docs_list}>

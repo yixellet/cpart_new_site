@@ -8,7 +8,7 @@ export default function IndexPage() {
   return (
   <>
   <div className={styles.cpart_full_name__wrapper}>
-    <div className={styles.cpart_full_name}>
+    <hgroup className={styles.cpart_full_name}>
       <h2 className={`${noto_sans.className} ${styles.gau}`}>
         ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ УЧРЕЖДЕНИЕ АСТРАХАНСКОЙ ОБЛАСТИ</h2>
       <div className={`${noto_serif.className} ${styles.name}`}>
@@ -18,7 +18,7 @@ export default function IndexPage() {
           <h2 className={styles.rt}>И РАЗВИТИЯ ТЕРРИТОРИЙ</h2>
         </div>
       </div>
-    </div>
+    </hgroup>
   </div>
   <section className={styles.work_carousel}>
     <Carousel />
