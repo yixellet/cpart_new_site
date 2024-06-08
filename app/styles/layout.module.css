@@ -47,12 +47,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .footer {
   grid-area: footer;
   justify-self: center;
+  margin-top: 40px;
 }
 
 .title_full_width {
@@ -126,13 +127,14 @@
   /*text-align: right;*/
 }
 
-.text_i_right {
+.figcaption {
   font-size: 1rem;
   line-height: 1.6;
   max-width: 40rem;
-  /*text-align: right;*/
+  text-align: center;
   font-style: italic;
   color: #5c5c5c;
+  margin-top: 10px;
 }
 
 .text_right:first-of-type {
@@ -188,4 +190,9 @@
 .img_form:hover {
   box-shadow: 0 0 30px #949494;
   transform: scale(1.02);
+}
+
+.two_column {
+  width: 60%;
+  column-count: 2;
 }

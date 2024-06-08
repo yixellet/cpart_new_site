@@ -1,0 +1,75 @@
+.wrapper {
+  background-color: bisque;
+  height: 300px;
+  width: 1000px;
+  margin-top: 40px;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.arrow {
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.arrow_left {
+  left: 0;
+}
+
+.arrow_right {
+  right: 0;
+}
+
+.arrow:hover {
+  opacity: 30%;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 665px;
+    height: 200px;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 443px;
+    height: 150px;
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 300px;
+    height: 200px;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .wrapper {
+    width: calc(100% - 30px);
+    height: 200px;
+    margin: 0 15px;
+  }
+}

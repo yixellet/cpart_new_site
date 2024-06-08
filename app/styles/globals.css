@@ -4,10 +4,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: system-ui, sans-serif;
+  font-size: 16px;
 }
 
 a {
-  color: #fff;
+  color: #0081cc;
   text-decoration: none;
 }
 
@@ -18,3 +19,18 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
