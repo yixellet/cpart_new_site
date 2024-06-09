@@ -23,18 +23,19 @@ jobs:
     #- run: npm run build
     #- run: scp -o StrictHostKeyChecking=no -r .next ${{ secrets.CPART_USER }}@${{ secrets.CPART_HOST }}:~/cpart_build
     #- run: cd .next && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . ${{ secrets.CPART_USER }}@${{ secrets.CPART_HOST }}:~/cpart_build
-    - uses: D3rHase/ssh-command-action@v0.2.2
-        with:
-          # hostname / IP of the server
-          host: ${{ secrets.CPART_HOST }}
-          # ssh port of the server
-          #port: # optional, default is 22
-          # user of the server
-          user: ${{ secrets.CPART_USER }}
-          # private ssh key registered on the server
-          private_key: ${{ secrets.CPART_PRIVATE_KEY }}
-          # Fingerprint of the server, preventing man-in-the-middle attacks
-          host_fingerprint: ${{ secrets.CPART_FINGERPRINT }}
-          # command to be executed
-          command: echo 'Hello world'
+    - name: SSH Command
+      uses: D3rHase/ssh-command-action@v0.2.2
+      with:
+        # hostname / IP of the server
+        host: ${{ secrets.CPART_HOST }}
+        # ssh port of the server
+        #port: # optional, default is 22
+        # user of the server
+        user: ${{ secrets.CPART_USER }}
+        # private ssh key registered on the server
+        private_key: ${{ secrets.CPART_PRIVATE_KEY }}
+        # Fingerprint of the server, preventing man-in-the-middle attacks
+        host_fingerprint: ${{ secrets.CPART_FINGERPRINT }}
+        # command to be executed
+        command: echo 'Hello world'
           
