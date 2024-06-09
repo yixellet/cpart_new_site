@@ -22,6 +22,10 @@ export default function IndexPage() {
   </div>
   <section className={styles.work_carousel}>
     <Carousel />
+    <article>
+      <p>If you want to fuck the sky</p>
+      <p>You must teach your penis fly</p>
+    </article>
   </section>
   </>)
 }
